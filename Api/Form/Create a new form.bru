@@ -1,0 +1,28 @@
+meta {
+  name: Create a new form
+  type: http
+  seq: 1
+}
+
+post {
+  url: https://api.jotform.com/form
+  body: formUrlEncoded
+  auth: none
+}
+
+headers {
+  Content-Type: application/x-www-form-urlencoded
+  APIKEY: {{Api_Key}}
+}
+
+body:form-urlencoded {
+  questions[0][type]: control_head
+  questions[0][text]: Test with Bruno
+  questions[0][order]: 1
+  questions[0][name]: header
+  questions[1][type]: control_fullname
+  questions[1][text]: Full Name
+  questions[1][order]: 2
+  questions[1][name]: fullname
+  questions[1][required]: Yes
+}

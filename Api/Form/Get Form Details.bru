@@ -1,0 +1,19 @@
+meta {
+  name: Get Form Details
+  type: http
+  seq: 2
+}
+
+get {
+  url: https://api.jotform.com/form/{{formID}}
+  body: none
+  auth: none
+}
+
+headers {
+  APIKEY: {{Api_Key}}
+}
+
+vars:pre-request {
+  formID: 250893900311149
+}

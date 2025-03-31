@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "Api_Jotform",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

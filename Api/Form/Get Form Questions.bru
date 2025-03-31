@@ -1,0 +1,19 @@
+meta {
+  name: Get Form Questions
+  type: http
+  seq: 3
+}
+
+get {
+  url: https://api.jotform.com/form/{{formID}}/questions
+  body: none
+  auth: none
+}
+
+headers {
+  APIKEY: {{Api_Key}}
+}
+
+vars:pre-request {
+  formID: 250893900311149
+}

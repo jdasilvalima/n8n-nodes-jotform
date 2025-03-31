@@ -1,0 +1,20 @@
+meta {
+  name: Get Details About a Question
+  type: http
+  seq: 4
+}
+
+get {
+  url: https://api.jotform.com/form/{{formID}}/question/{{questionID}}
+  body: none
+  auth: none
+}
+
+headers {
+  APIKEY: {{Api_Key}}
+}
+
+vars:pre-request {
+  formID: 250893900311149
+  questionID: 3
+}
