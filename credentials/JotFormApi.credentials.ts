@@ -5,7 +5,7 @@ export class JotFormApi implements ICredentialType {
 
 	displayName = 'JotForm API';
 
-	documentationUrl = 'jotForm';
+	documentationUrl = 'https://api.jotform.com/docs/';
 
 	properties: INodeProperties[] = [
 		{
